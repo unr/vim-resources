@@ -4,4 +4,12 @@
  * Main site structure, focus on wrapper elements here.
  */
 
-body { background: $color-white; }
+html, body {
+	text-align: center;
+}
+
+.wrapper {
+	max-width: 1000px;
+	text-align: left;
+	margin: 0 auto;
+}

@@ -132,7 +132,7 @@ module.exports = function(grunt) {
           'assets/scss/*.scss',
           'assets/scss/**/*.scss'
         ],
-        tasks: ['scss:dev', 'autoprefixer:dev']
+        tasks: ['sass:dev', 'autoprefixer:dev']
       },
       js: {
         files: [

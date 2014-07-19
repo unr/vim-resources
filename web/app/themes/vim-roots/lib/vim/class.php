@@ -8,7 +8,8 @@
 class Vim extends VimUtils {
 
 	public static function init() {
-		// Setup our theme basics
+		self::setup_posts();
+		self::setup_shortcodes();
 		// self::setup_theme();
 	}
 
@@ -19,6 +20,27 @@ class Vim extends VimUtils {
 	public static function setup_theme() {
 		require_once locate_template('/lib/vim/setup.php');
 		VimSetup::init();
+	}
+
+	/**
+	 * Setup Shortcodes for use in posts.
+	 */
+	public static function setup_shortcodes() {
+		require_once locate_template('/lib/vim/shortcodes.php');
+		VimShortcodes::init();
+	}
+
+	/**
+	 * Setup Custom Post Types
+	 */
+	public static function setup_posts() {
+		if (class_exists('Super_Custom_Post_Type')) {
+			require_once locate_template('/lib/vim/custom_post_types.php');
+			require_once locate_template('/lib/vim/posts.php');
+			VimPosts::init();
+		} else {
+			return false;
+		}
 	}
 
 }

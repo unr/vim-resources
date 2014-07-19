@@ -78,6 +78,7 @@ $breakpoint-xxlarge-only: "#{$breakpoint-screen} and (min-width:#{lower-bound($x
  */
 $color-black : #000000;
 $color-white : #ffffff;
+$color-dark : #333333;
 $color-off-white : #fafafa;
 
 $color-yellow : #ffd900;
@@ -100,6 +101,8 @@ $color-pinterest : #cb2229;
 $color-linkedin : #1985BC;
 $color-youtube : #E22A27;
 
+// Site background color
+$color-background : $color-dark;
 
 /*
  * Reusable Borders

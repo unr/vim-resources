@@ -1,0 +1,34 @@
+/*
+ * Visibility.scss
+ *
+ * This file handles visiblity classes. Foundation originally came
+ * with their own, but they are mobile focused. We're going to write
+ * our own to focus on desktop first, and prevent broken styles.
+ */
+
+// Modifications for anything medium and lower
+@media #{$breakpoint-medium-down} {
+	.hide-for-medium-down {
+		display: none!important;
+	}
+}
+
+// Modifications for anything above medium
+@media #{$breakpoint-large-up} {
+	.show-for-medium-down {
+		display: none!important;
+	}
+}
+
+@media #{$breakpoint-medium-up} {
+	.show-for-small-only {
+		display: none!important;
+	}
+}
+
+// Modifications for anything small
+@media #{$breakpoint-small-only} {
+	.hide-for-small {
+		display: none!important;
+	}
+}
