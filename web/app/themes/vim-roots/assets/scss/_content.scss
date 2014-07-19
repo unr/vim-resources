@@ -1,0 +1,17 @@
+/**
+ * Content.scss
+ *
+ * Styling of specific content pieces
+ */
+
+/**
+ * Styling of an individual article
+ */
+article {
+	background: $color-white;
+	padding: $size-medium;
+
+	h1 {
+		margin-top: 0;
+	}
+}

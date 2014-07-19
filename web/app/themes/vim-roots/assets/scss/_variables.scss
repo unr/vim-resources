@@ -19,6 +19,16 @@ $size-border-radius : 3px;
 $size-border-radius-large : 10px;
 $size-border-round : 50%;
 
+// Button Padding Sizes, must be rems
+$size-button-small : rem-calc(8px);
+$size-button-large : rem-calc(16px);
+$size-button-border-small : rem-calc(6px);
+$size-button-border-large : rem-calc(16px);
+
+// Universal Lighten/Darken counts.
+$size-lighten : 10%;
+$size-darken : 10%;
+
 /*
  * Responsive Breakpoints
  *
@@ -81,16 +91,13 @@ $color-white : #ffffff;
 $color-dark : #333333;
 $color-off-white : #fafafa;
 
-$color-yellow : #ffd900;
-$color-orange : #ffba01;
-$color-blue : #004fb6;
+$color-orange : #FF851B;
 $color-red : #FF4136;
-$color-green : #3da136;
 
 $color-grey : #a2a2a2;
 $color-light-grey : #e6edf0;
 
-$color-links : $color-blue;
+$color-links : $color-orange;
 $color-border : $color-black;
 $color-light-text: $color-light-grey;
 
@@ -119,6 +126,11 @@ $border-transparent : solid 1px transparent;
 
 $font-open : 'Open Sans', sans-serif;
 $font-main : $font-open;
+
+// Regular type
+$font-size-small : rem-calc(14px);
+$font-size-regular : rem-calc(16px);
+$font-size-large : rem-calc(18px);
 
 $weight-light : 100;
 $weight-regular : 400;

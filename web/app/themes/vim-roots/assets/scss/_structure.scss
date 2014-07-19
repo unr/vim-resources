@@ -4,12 +4,31 @@
  * Main site structure, focus on wrapper elements here.
  */
 
+* { box-sizing: border-box; }
+
 html, body {
 	text-align: center;
 }
 
+/**
+ * Overall site wrapper, in base.php
+ */
 .wrapper {
 	max-width: 1000px;
 	text-align: left;
-	margin: 0 auto;
+	margin: 100px auto 0;
+}
+
+/**
+ * A site section is a foundation enabled row.
+ */
+.section {
+	@include grid-row();
+
+	.section-body {
+		@include grid-column(8);
+	}
+	.section-side {
+		@include grid-column(4);
+	}
 }

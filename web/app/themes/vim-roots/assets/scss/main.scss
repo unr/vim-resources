@@ -8,16 +8,20 @@
 // Utility Includes
 @import "../vendor/foundation/scss/normalize";
 @import "../vendor/foundation/scss/foundation/functions";
-@import "settings"; // copy of foundation settings, in local theme
 @import "variables"; // variables - for use throughout theming
+@import "settings"; // copy of foundation settings, in local theme
 @import "mixins"; // variables - for use throughout theming
 
 // Foundation Piece Includes
 @import "../vendor/foundation/scss/foundation/components/grid";
 @import "../vendor/foundation/scss/foundation/components/type";
+@import "../vendor/foundation/scss/foundation/components/keystrokes";
+@import "../vendor/foundation/scss/foundation/components/buttons";
 
 // Non-Foundation Styles
 @import "typography";
+@import "buttons";
 @import "theme";
 @import "structure";
+@import "content";
 @import "visibility";

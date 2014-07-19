@@ -1,0 +1,69 @@
+/**
+ * Universal Button Styles
+ *
+ * Starting with the basics from foundation, and then extending to include
+ * our own flair.
+ *
+ * Will be snatching some stuff from: http://alexwolfe.github.io/Buttons/
+ */
+
+/**
+ * Generic button class
+ */
+.button {
+	@include button($size-button-small);
+	font-size: $font-size-small;
+
+	&:hover {
+		background: lighten($primary-color, $size-lighten);
+	}
+	&:active {
+		box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px $color-white;
+	}
+}
+
+.button--large {
+	@include button($size-button-large);
+	font-size: $font-size-large;
+}
+
+/**
+ * 2px Border - Transparent BG Button
+ *
+ * Trendy. Makes a default color button. Add more as needed.
+ */
+.button--border {
+	@include button($size-button-border-small);
+	border: solid 2px $primary-color;
+	color: $primary-color;
+	background: transparent;
+
+	&:hover {
+		border-color: lighten($primary-color, $size-lighten);
+		color: lighten($primary-color, $size-lighten);
+		background: transparent;
+	}
+
+	&:active {
+		border-color: darken($primary-color, $size-darken);
+		color: darken($primary-color, $size-darken);
+		background: transparent;
+	}
+}
+
+/**
+ * Input elements, submit buttons
+ */
+input.button, input[type=submit] {
+	// foundation defaults
+	@include button($size-button-small, $primary-color, 0, false, false, true);
+	font-size: $font-size-small;
+
+	&:hover {
+		background: lighten($primary-color, $size-lighten);
+	}
+
+	&:active {
+		box-shadow: inset 0px 1px 3px rgba(0, 0, 0, 0.3), 0px 1px 0px $color-white;
+	}
+}

@@ -5,3 +5,8 @@
  * but Foundation5 Type styles are great. They will be included, additional
  * tweaks will be made here.
  */
+
+// Keystrokes
+kbd {
+	@include keystroke(#cccccc);
+}
