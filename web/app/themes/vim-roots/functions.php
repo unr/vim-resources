@@ -32,3 +32,15 @@ foreach ($roots_includes as $file) {
   require_once $filepath;
 }
 unset($file, $filepath);
+
+/**
+ * Roots includes from default starter theme above,
+ * meanwhile custom class stuff going on below.
+ */
+function bootstrap_theme() {
+	require_once locate_template('/lib/vim/utils.php');
+	require_once locate_template('/lib/vim/class.php');
+	Vim::init();
+}
+
+add_action('after_setup_theme', 'bootstrap_theme');
