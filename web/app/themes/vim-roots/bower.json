@@ -1,9 +1,9 @@
 {
-  "name": "roots",
-  "version": "7.0.0",
-  "homepage": "http://roots.io",
+  "name": "vimresources-theme",
+  "version": "1.0.0",
+  "homepage": "http://vimresources",
   "authors": [
-    "Ben Word <ben@benword.com>"
+    "Paul Morrison <paul.unr@gmail.com>"
   ],
   "license": "MIT",
   "private": true,
@@ -15,7 +15,7 @@
   "dependencies": {
     "modernizr": "2.8.2",
     "jquery": "1.11.1",
-    "bootstrap": "3.2.0",
-    "respond": "1.4.2"
+    "respond": "1.4.2",
+    "foundation": "~5.3.1"
   }
 }
