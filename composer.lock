@@ -1,10 +1,22 @@
 {
     "_readme": [
         "This file locks the dependencies of your project to a known state",
-        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file"
+        "Read more about it at http://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
+        "This file is @generated automatically"
     ],
-    "hash": "bc78dfb47ea03142c13601f0d8ca2c8b",
+    "hash": "6f97264e44415b6546381ad721bd1295",
     "packages": [
+        {
+            "name": "bradt/wp-migrate-db-pro",
+            "version": "1.4.1",
+            "dist": {
+                "type": "zip",
+                "url": "vendor_src/wp-migrate-db-pro-1.4.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "type": "wordpress-plugin"
+        },
         {
             "name": "composer/installers",
             "version": "v1.0.12",
@@ -190,6 +202,26 @@
                 "fancyguy/webroot-installer": "1.1.0"
             },
             "type": "webroot"
+        },
+        {
+            "name": "wpackagist/super-cpt",
+            "version": "0.2.1",
+            "source": {
+                "type": "svn",
+                "url": "http://plugins.svn.wordpress.org/super-cpt/",
+                "reference": "tags/0.2.1"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "http://downloads.wordpress.org/plugin/super-cpt.0.2.1.zip",
+                "reference": null,
+                "shasum": null
+            },
+            "require": {
+                "composer/installers": "~1.0"
+            },
+            "type": "wordpress-plugin",
+            "homepage": "http://wordpress.org/plugins/super-cpt/"
         }
     ],
     "packages-dev": [

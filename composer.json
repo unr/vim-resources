@@ -29,6 +29,18 @@
       "type": "composer",
       "url": "http://wpackagist.org"
     },
+	{
+	  "type": "package",
+	  "package": {
+		"name": "bradt/wp-migrate-db-pro",
+		"version": "1.4.1",
+		"type": "wordpress-plugin",
+		"dist": {
+		  "type": "zip",
+		  "url": "vendor_src/wp-migrate-db-pro-1.4.1.zip"
+		}
+	  }
+	},
     {
       "type": "package",
       "package": {
@@ -50,7 +62,9 @@
     "wordpress/wordpress": "3.9",
     "fancyguy/webroot-installer": "1.1.0",
     "composer/installers": "v1.0.12",
-    "vlucas/phpdotenv": "~1.0.6"
+    "vlucas/phpdotenv": "~1.0.6",
+	"bradt/wp-migrate-db-pro": "1.4.1",
+	"wpackagist/super-cpt": "*"
   },
   "extra": {
     "installer-paths": {
