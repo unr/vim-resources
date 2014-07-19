@@ -1,28 +1,19 @@
 {
-  "name": "roots/bedrock",
+  "name": "unr/vimresources",
   "type": "project",
   "license": "MIT",
-  "description": "A modern WordPress stack",
-  "homepage": "http://roots.io/wordpress-stack/",
+  "description": "Site set up for vimresources project. Name TBD.",
+  "homepage": "http://vimresources/",
   "authors": [
     {
-      "name": "Scott Walkinshaw",
-      "email": "scott.walkinshaw@gmail.com",
-      "homepage": "https://github.com/swalkinshaw"
-    },
-    {
-      "name": "Ben Word",
-      "email": "ben@benword.com",
-      "homepage": "https://github.com/retlehs"
+      "name": "Paul Morrison",
+      "email": "paul.unr@gmail.com",
+      "homepage": "https://github.com/unr"
     }
   ],
   "keywords": [
-    "wordpress", "stack", "capistrano", "composer", "vagrant", "wp"
+    "wordpress", "blog", "vim", "resource", "plugins", "wp"
   ],
-  "support": {
-    "issues": "https://github.com/roots/bedrock/issues",
-    "forum": "http://discourse.roots.io/category/bedrock"
-  },
   "config": {
     "preferred-install": "dist",
     "generate-salts": true
