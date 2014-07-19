@@ -7,9 +7,6 @@
  */
 class VimUtils {
 
-	// Google Analytics ID
-	const GOOGLE_ANALYTICS_ID = "UX-XXXXX-X";
-
 	/**
 	 * Checks to see if a template exists and includes it if necessary
 	 *

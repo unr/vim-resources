@@ -1,0 +1,122 @@
+/*
+ * Variables.scss
+ */
+
+/*
+ * Reusable Sizes
+ *
+ * In some places we may use $size-small/2. This will allow us to
+ * keep universal ratios.
+ */
+$size-large : 40px;
+$size-medium : 24px;
+$size-small : 16px;
+$size-tiny : 8px;
+$size-mobile : 20px;
+
+// border radius sizes
+$size-border-radius : 3px;
+$size-border-radius-large : 10px;
+$size-border-round : 50%;
+
+/*
+ * Responsive Breakpoints
+ *
+ * These declare where a certain 'size' breaks.
+ * This is taken mostly from the default foundation _settings.scss
+ *
+ * Minified mobile layout appears on $small-range
+ * Minified mobile also appears for $medium-range, but can be tweaked separate
+ *
+ * basic desktop layout starts at $large-range
+ *
+ * xlarge, xxlarge are nice to haves for moving forward.
+ *
+ * When writing scss, simply add a media-query to use these. for example
+ *
+ * .classname {
+ * 		border: red;
+ * 		@media #{breakpoint-small-up} {
+ * 			border: blue;
+ * 		}
+ * }
+ *
+ */
+$small-range: (0px, 640px);
+$medium-range: (641px, 768px);
+$large-range: (769px, 1120px);
+$xlarge-range: (1025px, 1440px);
+$xxlarge-range: (1441px);
+
+$breakpoint-screen: "only screen";
+
+$breakpoint-landscape: "#{$breakpoint-screen} and (orientation: landscape)";
+$breakpoint-portrait: "#{$breakpoint-screen} and (orientation: portrait)";
+
+$breakpoint-small-up: $breakpoint-screen;
+$breakpoint-small-only: "#{$breakpoint-screen} and (max-width: #{upper-bound($small-range)})";
+
+$breakpoint-medium-up: "#{$breakpoint-screen} and (min-width:#{lower-bound($medium-range)})";
+$breakpoint-medium-down: "#{$breakpoint-screen} and (max-width:#{upper-bound($medium-range)})";
+$breakpoint-medium-only: "#{$breakpoint-screen} and (min-width:#{lower-bound($medium-range)}) and (max-width:#{upper-bound($medium-range)})";
+
+$breakpoint-large-up: "#{$breakpoint-screen} and (min-width:#{lower-bound($large-range)})";
+$breakpoint-large-down: "#{$breakpoint-screen} and (max-width:#{upper-bound($large-range)})";
+$breakpoint-large-only: "#{$breakpoint-screen} and (min-width:#{lower-bound($large-range)}) and (max-width:#{upper-bound($large-range)})";
+
+$breakpoint-xlarge-up: "#{$breakpoint-screen} and (min-width:#{lower-bound($xlarge-range)})";
+$breakpoint-xlarge-down: "#{$breakpoint-screen} and (max-width:#{upper-bound($xlarge-range)})";
+$breakpoint-xlarge-only: "#{$breakpoint-screen} and (min-width:#{lower-bound($xlarge-range)}) and (max-width:#{upper-bound($xlarge-range)})";
+
+$breakpoint-xxlarge-up: "#{$breakpoint-screen} and (min-width:#{lower-bound($xxlarge-range)})";
+$breakpoint-xxlarge-only: "#{$breakpoint-screen} and (min-width:#{lower-bound($xxlarge-range)}) and (max-width:#{upper-bound($xxlarge-range)})";
+
+/*
+ * Reusable Colors
+ *
+ * Colors should be declared by name, as well as by use.
+ */
+$color-black : #000000;
+$color-white : #ffffff;
+$color-off-white : #fafafa;
+
+$color-yellow : #ffd900;
+$color-orange : #ffba01;
+$color-blue : #004fb6;
+$color-red : #FF4136;
+$color-green : #3da136;
+
+$color-grey : #a2a2a2;
+$color-light-grey : #e6edf0;
+
+$color-links : $color-blue;
+$color-border : $color-black;
+$color-light-text: $color-light-grey;
+
+$color-facebook : #385c9a;
+$color-twitter : #24abe2;
+$color-googleplus : #e44c3c;
+$color-pinterest : #cb2229;
+$color-linkedin : #1985BC;
+$color-youtube : #E22A27;
+
+
+/*
+ * Reusable Borders
+ */
+$border-default : solid 1px rgba(0,0,0,0.7);
+$border-black : solid 1px $color-black;
+$border-white : solid 1px $color-white;
+$border-transparent : solid 1px transparent;
+
+/*
+ * Reusable Fonts
+ */
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:300,400,700);
+
+$font-open : 'Open Sans', sans-serif;
+$font-main : $font-open;
+
+$weight-light : 100;
+$weight-regular : 400;
+$weight-bold : 700;
