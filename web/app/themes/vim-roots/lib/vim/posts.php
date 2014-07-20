@@ -18,6 +18,7 @@ class VimPosts {
 	 */
 	public static function do_create_custom_post_types() {
 		self::create_snippets_post_type();
+		self::create_resource_post_type();
 		self::create_dotfiles_post_type();
 		self::create_plugins_post_type();
 	}
@@ -49,6 +50,24 @@ class VimPosts {
 			)
 		);
 		$snippets->set_icon('code');
+	}
+
+	/**
+	 * Create Resources Post Type
+	 *
+	 * Enables the custom post type 'resource'. A resource will include a brief
+	 * description about what is included, and a CTA.
+	 */
+	public static function create_resource_post_type() {
+		$resources = new Vim_Custom_Post_Type(
+			'resource',
+			'Resource',
+			'Resources',
+			array(
+				'taxonomies' => self::$default_taxonomies
+			)
+		);
+		$resources->set_icon('github-alt');
 	}
 
 	/**
@@ -118,7 +137,7 @@ class VimPosts {
 		$string = $post->fields['source_title'][0];
 
 		if (!empty($post->fields['source_url'][0])) {
-			$string = "<a href='{$post->fields['source_url'][0]}'>{$string}</a>";
+			$string = "<a href='{$post->fields['source_url'][0]}' target='_blank'>{$string}</a>";
 		}
 
 		$post->source = $string;
@@ -138,7 +157,7 @@ class VimPosts {
 		$string = $post->fields['submitter_title'][0];
 
 		if (!empty($post->fields['submitter_url'][0])) {
-			$string = "<a href='{$post->fields['submitter_url'][0]}'>{$string}</a>";
+			$string = "<a href='{$post->fields['submitter_url'][0]}' target='_blank>{$string}</a>";
 		}
 
 		$post->submitter = $string;

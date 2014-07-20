@@ -19,9 +19,12 @@ class VimUtils {
 		// Categories
 		'beginner-friendly' => 'fa-user',
 		'vimrc' => 'fa-file-code-o',
+		'screencast' => 'fa-play-circle-o',
+		'reading' => 'fa-book',
 
 		// Post Types
-		'snippet' => 'fa-scissors',
+	'snippet' => 'fa-scissors',
+		'resource' => 'fa-graduation-cap',
 		'dotfile' => 'fa-dot-circle-o'
 	);
 
@@ -29,9 +32,10 @@ class VimUtils {
 	 * Wrapper function for retrieving an icon from $icon_lookup by slug.
 	 */
 	public static function get_icon($slug) {
-		$icon = self::$icon_lookup[$slug];
-		if (!$icon) { return $icon_lookup['default']; }
-		return $icon;
+		if (!array_key_exists($slug, self::$icon_lookup)) {
+			return self::$icon_lookup['default'];
+		}
+		return self::$icon_lookup[$slug];
 	}
 
 	/**

@@ -60,6 +60,36 @@
 }
 
 /**
+ * CTA Buttons
+ *
+ * Used in the middle of posts - large centered buttons linking to an external
+ * resource.
+ */
+.button--cta {
+	@include bordered-button($color-blue, $size-button-large);
+	display: block;
+	text-align: center;
+	margin: $size-large 10% $size-large;
+	padding-left: 0;
+	padding-right: 0;
+
+	strong, span {
+		display: block;
+	}
+
+	strong {
+		font-size: $font-size-small;
+		margin-bottom: $size-tiny;
+	}
+
+	span {
+		font-size: $font-size-large;
+		line-height: 1.4;
+		margin: 0 10%;
+	}
+}
+
+/**
  * Input elements, submit buttons
  */
 input.button, input[type=submit] {
