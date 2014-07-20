@@ -22,6 +22,11 @@
 	}
 }
 
+.button--small {
+	@include button($size-button-tiny);
+	font-size: $font-size-tiny;
+}
+
 .button--large {
 	@include button($size-button-large);
 	font-size: $font-size-large;
@@ -40,6 +45,17 @@
 	}
 	&.button--grey {
 		@include bordered-button($color-grey);
+	}
+}
+.button--border-small {
+	@include bordered-button($color-orange, $size-button-tiny);
+	font-size: $font-size-tiny;
+
+	&.button--dark {
+		@include bordered-button($color-dark, $size-button-tiny);
+	}
+	&.button--grey {
+		@include bordered-button($color-grey, $size-button-tiny);
 	}
 }
 

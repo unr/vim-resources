@@ -55,3 +55,25 @@
 		background: transparent;
 	}
 }
+
+/**
+ * Creates a bottom-border link
+ */
+@mixin bordered-link($color: $color-links, $weight: $font-weight-bold, $padding: 1px, $border: 1px) {
+	color: $color;
+	font-weight: $weight;
+	padding-bottom: $padding;
+	border-bottom: solid $border $color;
+	margin-bottom: -($padding+$border);
+
+	&:hover {
+		color: lighten($color, $size-lighten);
+		border-color: lighten($color, $size-lighten);
+		cursor: pointer;
+	}
+	&:active {
+		color: darken($color, $size-darken);
+		border-color: lighten($color, $size-lighten);
+		cursor: pointer;
+	}
+}

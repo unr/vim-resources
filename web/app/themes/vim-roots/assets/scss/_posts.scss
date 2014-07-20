@@ -1,0 +1,52 @@
+/**
+ * Content.scss
+ *
+ * Styling of specific content pieces
+ */
+
+/**
+ * Styling of an individual article
+ */
+article, .article {
+	background: $color-white;
+	padding: $size-medium;
+}
+
+.post-date {
+	p {
+		color: $color-grey-text;
+		font-size: $font-size-tiny;
+		text-transform: uppercase;
+	}
+}
+
+.post-footer {
+	padding-top: $size-medium;
+	border-top: $border-default;
+}
+
+/**
+ * A meta-block consists of a label, and a series of links.
+ *
+ * At larger resolutions, the strong tag will break out above the links
+ * creating a visual label.
+ */
+.meta-block {
+	font-size: $font-size-small;
+	margin: 0 0 $size-small 0;
+	color: $color-grey-text;
+
+	&.meta-block--last {
+		margin: 0;
+	}
+
+	&.meta-block--tags {
+		margin: 0;
+		font-size: 0;
+
+		.button {
+			margin: $size-tiny $size-tiny 0 0;
+		}
+
+	}
+}

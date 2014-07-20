@@ -7,11 +7,13 @@
 		</div>
 	<![endif]-->
 
+	<?php include( Vim::get_template('header') ); ?>
+
 	<div class='wrapper'>
 		<?php include roots_template_path(); ?>
 	</div>
 
-	<?php get_template_part('templates/footer'); ?>
+	<?php include( Vim::get_template('footer') ); ?>
 
 </body>
 </html>

@@ -20,6 +20,7 @@ $size-border-radius-large : 10px;
 $size-border-round : 50%;
 
 // Button Padding Sizes, must be rems
+$size-button-tiny : rem-calc(4px);
 $size-button-small : rem-calc(8px);
 $size-button-large : rem-calc(16px);
 $size-button-border-small : rem-calc(6px);
@@ -98,8 +99,8 @@ $color-grey : #888888;
 $color-grey-light : #e6edf0;
 $color-grey-text : $color-grey;
 
-$color-links : $color-orange;
-$color-border : $color-grey;
+$color-links : $color-dark;
+$color-border : #dddddd;
 
 $color-facebook : #385c9a;
 $color-twitter : #24abe2;
@@ -114,7 +115,7 @@ $color-background : $color-dark;
 /*
  * Reusable Borders
  */
-$border-default : solid 1px rgba(0,0,0,0.7);
+$border-default : solid 1px $color-border;
 $border-black : solid 1px $color-black;
 $border-white : solid 1px $color-white;
 $border-transparent : solid 1px transparent;

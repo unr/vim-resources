@@ -11,3 +11,14 @@ kbd {
 	@include keystroke($color-grey-light);
 	border-radius: $size-border-radius;
 }
+
+/**
+ * Styling specific links
+ */
+.post-content a {
+	@include bordered-link();
+}
+
+.post-footer a {
+	@include bordered-link($color-grey-text);
+}
