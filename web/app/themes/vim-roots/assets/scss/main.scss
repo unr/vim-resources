@@ -10,7 +10,7 @@
 @import "../vendor/foundation/scss/foundation/functions";
 @import "variables"; // variables - for use throughout theming
 @import "settings"; // copy of foundation settings, in local theme
-@import "mixins"; // variables - for use throughout theming
+@import "utility"; // helper classes and mixins
 
 // Foundation Piece Includes
 @import "../vendor/foundation/scss/foundation/components/grid";

@@ -159,7 +159,7 @@ class VimPosts {
 		// For now, I only want the 'top' category
 		$category = reset($categories);
 
-		$category->icon = Vim::get_icon('beginner-friendly');
+		$category->icon = Vim::get_icon($category->slug);
 		$category->url = get_category_link($category->term_id);
 
 		$post->category = $category;

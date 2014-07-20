@@ -7,11 +7,15 @@
 /**
  * Styling of an individual article
  */
-article {
+article, .article {
 	background: $color-white;
 	padding: $size-medium;
+}
 
-	h1 {
-		margin-top: 0;
+.post-date {
+	p {
+		color: $color-grey-text;
+		font-size: $font-size-tiny;
+		text-transform: uppercase;
 	}
 }

@@ -8,5 +8,6 @@
 
 // Keystrokes
 kbd {
-	@include keystroke(#cccccc);
+	@include keystroke($color-grey-light);
+	border-radius: $size-border-radius;
 }

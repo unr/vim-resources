@@ -18,9 +18,11 @@ class VimUtils {
 
 		// Categories
 		'beginner-friendly' => 'fa-user',
+		'vimrc' => 'fa-file-code-o',
 
 		// Post Types
-		'snippet' => 'fa-scissors'
+		'snippet' => 'fa-scissors',
+		'dotfile' => 'fa-dot-circle-o'
 	);
 
 	/**

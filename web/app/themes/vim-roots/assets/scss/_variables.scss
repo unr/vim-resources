@@ -94,12 +94,12 @@ $color-off-white : #fafafa;
 $color-orange : #FF851B;
 $color-red : #FF4136;
 
-$color-grey : #a2a2a2;
-$color-light-grey : #e6edf0;
+$color-grey : #888888;
+$color-grey-light : #e6edf0;
+$color-grey-text : $color-grey;
 
 $color-links : $color-orange;
-$color-border : $color-black;
-$color-light-text: $color-light-grey;
+$color-border : $color-grey;
 
 $color-facebook : #385c9a;
 $color-twitter : #24abe2;
@@ -128,6 +128,7 @@ $font-open : 'Open Sans', sans-serif;
 $font-main : $font-open;
 
 // Regular type
+$font-size-tiny : rem-calc(11px);
 $font-size-small : rem-calc(14px);
 $font-size-regular : rem-calc(16px);
 $font-size-large : rem-calc(18px);

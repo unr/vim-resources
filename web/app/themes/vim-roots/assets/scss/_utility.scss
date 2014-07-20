@@ -1,0 +1,57 @@
+/**
+ * Utility.scss
+ *
+ * All our useful repetetive tasks in one.
+ */
+
+.float--none { float: none; }
+.float--right { float: right; }
+.float--left { float: left; }
+
+
+/**
+ * Mixins
+ */
+
+/**
+ * Vertical align anything
+ * http://zerosixthree.se/vertical-align-anything-with-just-3-lines-of-css/
+ */
+@mixin vertical-align {
+	position: relative;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%);
+}
+
+/**
+ * Remove transforms on an element.
+ */
+@mixin no-transform {
+	-webkit-transform: translateY(0);
+	-ms-transform: translateY(0);
+	transform: translateY(0);
+}
+
+/**
+ * Creates a bordered button, allowing you to swap out params
+ */
+@mixin bordered-button($color, $size: $size-button-small, $lighten: $size-lighten, $darken: $size-darken) {
+	@include button($size);
+	color: $color;
+	border: solid 2px $color;
+	background: transparent;
+
+	&:hover {
+		border-color: lighten($color, $lighten);
+		color: lighten($color, $lighten);
+		background: transparent;
+	}
+
+	&:active {
+		border-color: darken($color, $darken);
+		color: darken($color, $darken);
+		background: transparent;
+	}
+}

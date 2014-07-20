@@ -33,21 +33,13 @@
  * Trendy. Makes a default color button. Add more as needed.
  */
 .button--border {
-	@include button($size-button-border-small);
-	border: solid 2px $primary-color;
-	color: $primary-color;
-	background: transparent;
+	@include bordered-button($color-orange);
 
-	&:hover {
-		border-color: lighten($primary-color, $size-lighten);
-		color: lighten($primary-color, $size-lighten);
-		background: transparent;
+	&.button--dark {
+		@include bordered-button($color-dark);
 	}
-
-	&:active {
-		border-color: darken($primary-color, $size-darken);
-		color: darken($primary-color, $size-darken);
-		background: transparent;
+	&.button--grey {
+		@include bordered-button($color-grey);
 	}
 }
 
