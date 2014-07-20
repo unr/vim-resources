@@ -157,7 +157,7 @@ class VimPosts {
 		$string = $post->fields['submitter_title'][0];
 
 		if (!empty($post->fields['submitter_url'][0])) {
-			$string = "<a href='{$post->fields['submitter_url'][0]}' target='_blank>{$string}</a>";
+			$string = "<a href='{$post->fields['submitter_url'][0]}' target='_blank'>{$string}</a>";
 		}
 
 		$post->submitter = $string;
