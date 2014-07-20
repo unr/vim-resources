@@ -12,6 +12,11 @@ kbd {
 	border-radius: $size-border-radius;
 }
 
+// Better code alignment in posts
+.post-content pre {
+	margin-bottom: $size-medium;
+}
+
 /**
  * Styling specific links
  */

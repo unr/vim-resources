@@ -63,7 +63,8 @@ class VimShortcodes {
 	 * @returns string html markup
 	 */
 	public static function shortcode_code( $atts, $content = '') {
-		return "<pre class='{$atts['type']}'><code>{$content}</code></pre>";
+		$type = !empty($atts['type']) ? $atts['type'] : 'vim';
+		return "<pre><code class='{$type}'>{$content}</code></pre>";
 	}
 
 	/**
